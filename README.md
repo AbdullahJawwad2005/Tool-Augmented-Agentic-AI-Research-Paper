@@ -1,64 +1,114 @@
-# Tool-Augmented Agentic AI Research Paper
+<div align="center">
 
-A research paper and literature survey on **tool-augmented agentic AI systems**: AI systems that combine language-model reasoning with external tools, APIs, memory, retrieval, planning loops, and environment feedback.
+# Tool-Augmented Agentic AI Systems
 
-The project focuses on how tool use changes the design, evaluation, and reliability of modern agentic systems.
+**Survey and analysis of AI agents that reason, plan, and act through external tools.**
 
----
+<p>
+  <img src="https://img.shields.io/badge/Research-Agentic%20AI-111827?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Tool%20Use-2563EB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Evaluation-7C3AED?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge" />
+</p>
 
-## Research Focus
-
-This paper examines:
-
-- Architectures for tool-using agents
-- Planning and reasoning frameworks
-- Retrieval-augmented and API-augmented workflows
-- Tool selection and execution strategies
-- Evaluation methods for agent reliability
-- Failure modes, safety risks, and open research problems
+</div>
 
 ---
 
-## Repository Contents
+## Overview
 
-This repository is organized as a research-project workspace. It may include:
+This repository supports a research paper on **tool-augmented agentic AI systems**: systems that combine language-model reasoning with external tools, APIs, retrieval, memory, code execution, planning loops, and environment feedback.
 
-- Draft manuscript files
-- Literature review notes
-- Taxonomy and framework summaries
-- Source lists and references
-- Supporting materials for reproducibility
+The project studies how tool use changes what modern AI systems can do, how they fail, and how they should be evaluated.
+
+---
+
+## Core Question
+
+> How do external tools change the architecture, reliability, and evaluation of agentic AI systems?
+
+Tool-using agents are no longer only text generators. They can search, call APIs, write code, inspect files, run workflows, and make multi-step decisions. That makes them more useful, but also harder to evaluate and control.
+
+---
+
+## Topics Covered
+
+### Agent Architectures
+
+- ReAct-style reasoning and acting loops
+- Planner-executor systems
+- Tool routers and function-calling workflows
+- Retrieval-augmented and memory-augmented agents
+- Multi-agent and role-specialized agent designs
+
+### Tool-Use Strategies
+
+- Tool selection and invocation
+- API calling and structured outputs
+- Code execution and file inspection
+- Search, retrieval, and external knowledge access
+- Human-in-the-loop checkpoints
+
+### Evaluation and Reliability
+
+- Task success versus step-level correctness
+- Tool-call accuracy
+- Error propagation across multi-step workflows
+- Hallucinated tool results and invalid actions
+- Robustness, transparency, and auditability
+
+### Risks and Open Problems
+
+- Over-trusting unreliable intermediate results
+- Poor observability of reasoning and tool decisions
+- Security risks from tool access
+- Benchmark limitations for real-world agent tasks
+- Difficulty comparing agent systems across environments
+
+---
+
+## Repository Structure
+
+```text
+.
+├── paper/              manuscript drafts or final paper files
+├── notes/              literature review notes and source summaries
+├── references/         citation files, bibliographies, and source lists
+├── figures/            diagrams, tables, or taxonomy visuals
+└── README.md           project overview
+```
+
+Actual folder names may change as the paper develops.
+
+---
+
+## Research Output
+
+The final paper aims to provide:
+
+- A taxonomy of tool-augmented agentic AI systems
+- A comparison of major agent architectures
+- A breakdown of tool-use failure modes
+- A discussion of evaluation methods and benchmark gaps
+- A research agenda for safer and more reliable agent workflows
 
 ---
 
 ## Why This Matters
 
-Tool-augmented agents are becoming a major pattern in applied AI. Instead of only generating text, these systems can search, calculate, call APIs, write code, inspect files, and complete multi-step tasks.
+Agentic AI systems are becoming part of coding assistants, research assistants, workflow automation tools, and data-analysis systems. Their value depends not only on model quality, but also on how well they choose tools, use outputs, recover from mistakes, and expose their reasoning process.
 
-That shift raises important technical questions:
-
-- How should agents decide when to use tools?
-- How do we measure whether a tool-using agent is reliable?
-- What kinds of errors come from planning, retrieval, or tool execution?
-- How can agent workflows stay transparent and auditable?
-
----
-
-## Suggested Reading Path
-
-1. Start with the paper or main manuscript.
-2. Review the taxonomy/framework sections.
-3. Check the references for source papers and related systems.
-4. Use the notes as a map of the research area.
+This project treats tool use as a core systems-design problem, not just a prompting trick.
 
 ---
 
 ## Status
 
-Research project in progress. The repository is intended to document the literature review, analysis, and writing process behind the paper.
+Research and writing in progress.
 
 ---
 
 ## Author
 
-Abdullah Jawwad Yousafi
+Abdullah Jawwad Yousafi  
+Beloit College
